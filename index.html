@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header id="header">
+        <a href="#header"><img src="./images/burgerbiteslogo.png" alt="logo" id="header-img"></a>
+
+        <!--Nav menu Hamburger-->
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!--Nav Menu-->
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#header">home</a></li>
+                <li class="nav-link"><a href="#menu">menu</a></li>
+                <li class="nav-link"><a href="#our-story">our story</a></li>
+                <li class="nav-link"><a href="#contact-us">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Home Section-->
+    <section id="home">
+        <div class="intro">
+            <p class="slogan">Flavor-packed bites, grilled to perfection, served with a side of joy!</p>
+            <h1>burger</h1>
+            <h2>week</h2>
+        </div>
+        <div class="intro-img">
+            <img src="./images/burger2.png" alt="">
+        </div>
+    </section>
+    <section id="video-ad">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V5w1OGknhlc" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="image-container">
+            <div class="image-caption">
+                <p class="caption">more fun, more taste</p>
+                <img src="./images/burger6.png" alt="Burger 1" class="side-image">
+            </div>
+            <div class="image-caption">
+                <p class="caption">try our fresh & chili</p>
+                <img src="./images/burger5.png" alt="Burger 2" class="side-image"> 
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h3 class="menu-h3">always tasty burger</h3>
+        <h2>choose & enjoy</h2>
+        <p>Our menu offers a tantalizing array of dishes crafted with care and passion. From savory starters to sweet finishes, each item is a celebration of flavor.</p>
+        <div class="de-menu">
+           <div class="menu-item">
+                <img src="./images/burger9.png" alt="menu item">
+                <h3>The Classic Crunch</h3>
+                <p class="p-smaller">Crisp lettuce, juicy beef, and zesty pickles on a toasted sesame bun.</p>
+                <button>order now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/burger7.png" alt="menu item">
+                <h3>Spicy Fiesta</h3>
+                <p class="p-smaller">Fiery jalapeños, pepper jack cheese, and smoky chipotle mayo. Feel the heat!</p>
+                <button>order now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/burger8.png" alt="menu item">
+                <h3>BBQ Bliss</h3>
+                <p class="p-smaller">Tender beef, crispy onion rings, and tangy BBQ sauce. A smoky sensation!</p>
+                <button>order now</button>
+            </div> 
+        </div>
+    </section>
+    <section id="our-story">
+        <div class="about-us">
+            <h3>our amazing</h3>
+            <h2>journey so far</h2>
+            <p>At Burger Bites, we're more than just a dining destination – we're a culinary journey that celebrates passion, creativity, and flavor. Our story begins with a shared love for exceptional food and a commitment to delivering an unforgettable dining experience to our guests. From our humble beginnings as a small neighborhood eatery to our current status as a beloved culinary landmark, we've remained dedicated to crafting dishes that not only satisfy the palate but also nourish the soul.</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="./images/burger4.png" alt="our story">
+        </div>
+    </section>
+    <section id="contact-us">
+        <h3>Contact Us</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <div class="form-group">
+               <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> 
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="our-contact">
+                <p>&copy; 2024 This website was made by <a href="#">Madoks</a> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
